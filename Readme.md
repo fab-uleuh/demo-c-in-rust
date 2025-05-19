@@ -13,19 +13,37 @@ This demo project illustrates:
 ## Project Structure
 
 The project contains:
-- C source files (`.c` and `.h`)
-- Rust source files (`.rs`)
-- Build configuration files
+- `src/main.rs` - Main Rust entry point
+- `src/c_bindings.rs` - Rust bindings for C functions
+- `src/c/` - C source files
+- `build.rs` - Build script for compiling C code
+- `Cargo.toml` - Project configuration and dependencies
 
 ## Building and Running
 
-[Build and run instructions will be added as the project develops]
+To build and run the project:
+
+1. Make sure you have Rust and Cargo installed:
+   ```bash
+   rustc --version
+   cargo --version
+   ```
+
+2. Build the project:
+   ```bash
+   cargo build
+   ```
+
+3. Run the project:
+   ```bash
+   cargo run
+   ```
 
 ## Requirements
 
-- Rust toolchain
+- Rust toolchain (latest stable version)
 - C compiler (gcc/clang)
-- [Additional requirements will be added as needed]
+- cc crate (automatically managed by Cargo)
 
 ## Safety Considerations
 
@@ -37,4 +55,4 @@ When calling C code from Rust, it's important to:
 
 ## License
 
-[License information to be added]
+MIT License
